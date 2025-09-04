@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { AppComponent } from './app.component';\nimport { SekouComponent } from './sekou/sekou';\nexport const routes = [{\n  path: '',\n  component: AppComponent\n}, {\n  path: 'sekou',\n  component: SekouComponent\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

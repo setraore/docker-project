@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    <!-- Ajoute dans app.component.html ou un autre composant -->
+    <a routerLink="/sekou">Aller vers Sekou</a>
+    <router-outlet></router-outlet>
+
+  </div>
+  <div class="content">
+    <form (ngSubmit)="submit()" [formGroup]="form" novalidate>
+      <label for="firstName">Prénom</label>
+      <input id="firstName" type="text" formControlName="firstName" placeholder="Votre prénom" />
+
+      <label for="lastName">Nom</label>
+      <input id="lastName" type="text" formControlName="lastName" placeholder="Votre nom" />
+
+      <label for="birthDate">Date de naissance</label>
+      <input id="birthDate" type="date" formControlName="birthDate" />
+
+      <label for="password">Mot de passe</label>
+      <input id="password" type="password" formControlName="password" placeholder="Au moins 6 caractères et finissant par 123" />
+
+      <div class="actions">
+        <button type="button" class="btn-ghost">Connexion</button>
+        <button type="submit" class="btn-primary">Inscription</button>
+      </div>
+
+      <div *ngIf="message" [class.error]="message.type==='error'" [class.success]="message.type==='success'">
+        {{ message.text }}
+      </div>
+    </form>
+  </div>
+</div>
+
