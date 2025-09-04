@@ -1,0 +1,6 @@
+com\example\tp\config\CorsConfig.class
+com\example\tp\dto\RegistrationRequest.class
+com\example\tp\config\CorsConfig$1.class
+com\example\tp\controller\RegistrationController.class
+com\example\tp\config\PasswordProps.class
+com\example\tp\DemoApplication.class
